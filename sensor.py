@@ -261,32 +261,32 @@ def test_gps(x):
     # Test GPS
     gps = GPS()
     z = gps.get(x)
-    print 'x', x
-    print 'x->z', z
-    print 'z->x', GPS.h_inv(z)
-    print 'H', gps.H(x)
+    print( 'x', x)
+    print( 'x->z', z)
+    print( 'z->x', GPS.h_inv(z))
+    print( 'H', gps.H(x))
 
 def test_gyro(x):
     gyro = Gyroscope()
     z = gyro.get(x)
-    print 'x', x
-    print 'x->z', z
-    print 'H', gyro.H(x)
+    print( 'x', x)
+    print ('x->z', z)
+    print ('H', gyro.H(x))
 
 def test_mag(x):
     mag = Magnetometer()
     z = mag.get(x)
-    print 'x', x
-    print 'x->z', z
-    print 'H', mag.H(x)
+    print ('x', x)
+    print ('x->z', z)
+    print ('H', mag.H(x))
 
 def test_compass(x):
     compass = Compass()
     z = compass.get(x)
-    print 'x', x
-    print 'x->z', z
-    print 'z->x', z-np.pi/2
-    print 'H', compass.H(x)
+    print ('x', x)
+    print( 'x->z', z)
+    print( 'z->x', z-np.pi/2)
+    print( 'H', compass.H(x))
 
 #def test_accel(x):
 #    accel = Accelerometer()
@@ -300,9 +300,9 @@ def test_enc(x,u):
     enc = Encoder(r,l)
     enc.set_u(u)
     z = enc.get(x)
-    print 'x', x
-    print 'x->z', z
-    print 'H', enc.H(x)
+    print( 'x', x)
+    print ('x->z', z)
+    print( 'H', enc.H(x))
 
 # instantiate virtual sensors
 gps = GPS()

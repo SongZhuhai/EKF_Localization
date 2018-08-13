@@ -186,8 +186,8 @@ if __name__ == "__main__":
 
         e_x = ekf.predict(e_x)
 
-        print 'x', x
-        print 'e_x', ekf.x
+        print( 'x', x)
+        print( 'e_x', ekf.x)
 
     real = np.array(real)
     est = np.array(est)

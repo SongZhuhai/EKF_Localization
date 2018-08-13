@@ -14,7 +14,7 @@ class CometAnimation(TimedAnimation):
 
         if fig == None:
             fig = plt.figure()
-            print '::)'
+            print ('::)')
         if ax == None:
             ax = fig.add_subplot(1,1,1)
 

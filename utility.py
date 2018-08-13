@@ -1,4 +1,6 @@
 import numpy as np
+from functools import reduce
+
 
 # unpack
 cos = np.cos
